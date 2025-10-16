@@ -11,13 +11,13 @@ const Contact = () => {
     },
     {
       icon: <Phone className="w-6 h-6" />,
-      title: 'Teléfono',
+      title: 'Phone',
       value: '+503 7052-3646',
       link: 'tel:+50370523646'
     },
     {
       icon: <MapPin className="w-6 h-6" />,
-      title: 'Ubicación',
+      title: 'Location',
       value: 'Santa Teresa, San Martín, El Salvador',
       link: null
     }
@@ -27,16 +27,16 @@ const Contact = () => {
     <section id="contact" className="py-20 px-4 bg-gray-800/50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          Contáctame
+          Contact Me
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div>
-            <h3 className="text-2xl font-semibold mb-6">Información de Contacto</h3>
+            <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <p className="text-gray-300 mb-8">
-              ¿Tienes un proyecto en mente o quieres colaborar? No dudes en contactarme.
-              Estoy siempre abierto a nuevas oportunidades y desafíos.
+              Have a project in mind or want to collaborate? Feel free to contact me.
+              I'm always open to new opportunities and challenges.
             </p>
             
             <div className="space-y-4">
@@ -68,13 +68,13 @@ const Contact = () => {
             <form className="space-y-4">
               <div>
                 <label htmlFor="name" className="block text-gray-300 mb-2">
-                  Nombre
+                  Name
                 </label>
                 <input
                   type="text"
                   id="name"
                   className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-primary-500 transition-colors"
-                  placeholder="Tu nombre"
+                  placeholder="Your name"
                 />
               </div>
               
@@ -86,19 +86,19 @@ const Contact = () => {
                   type="email"
                   id="email"
                   className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-primary-500 transition-colors"
-                  placeholder="tu@email.com"
+                  placeholder="your@email.com"
                 />
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-gray-300 mb-2">
-                  Mensaje
+                  Message
                 </label>
                 <textarea
                   id="message"
                   rows="5"
                   className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-gray-100 focus:outline-none focus:border-primary-500 transition-colors resize-none"
-                  placeholder="Tu mensaje..."
+                  placeholder="Your message..."
                 ></textarea>
               </div>
               
@@ -107,7 +107,7 @@ const Contact = () => {
                 className="w-full bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-lg font-medium transition-colors inline-flex items-center justify-center gap-2"
               >
                 <Send size={20} />
-                Enviar Mensaje
+                Send Message
               </button>
             </form>
           </div>

@@ -11,84 +11,84 @@ const Certifications = () => {
 
   const certifications = [
     {
-      title: 'Spring Framework 6 & Spring Boot 3 desde cero a experto',
+      title: 'Spring Framework 6 & Spring Boot 3 from Zero to Expert',
       institution: 'Udemy',
-      date: 'Octubre 2025',
-      hours: '40.5 horas',
+      date: 'October 2025',
+      hours: '40.5 hours',
       image: 'images/diplomas/Certificado Spring Framework 6 y SpringBoot 3 de cero a experto.jpg',
-      description: 'Curso completo de Spring Framework 6 y Spring Boot 3'
+      description: 'Complete course on Spring Framework 6 and Spring Boot 3'
     },
     {
       title: 'Spring Framework Master Class - Java Spring the Modern Way',
       institution: 'Udemy',
-      date: 'Octubre 2025',
-      hours: '14 horas',
+      date: 'October 2025',
+      hours: '14 hours',
       image: 'images/diplomas/Spring Framework Master Class the Modern Way.jpg',
-      description: 'Master Class de Spring Framework con enfoque moderno'
+      description: 'Spring Framework Master Class with modern approach'
     },
     {
-      title: 'Angular y Spring Boot: Crea tu primera App Full Stack',
+      title: 'Angular and Spring Boot: Create your first Full Stack App',
       institution: 'Udemy',
-      date: 'Octubre 2025',
-      hours: '3.5 horas',
+      date: 'October 2025',
+      hours: '3.5 hours',
       image: 'images/diplomas/Certificado de Angular y Spring Boot.jpg',
-      description: 'Desarrollo Full Stack con Angular y Spring Boot'
+      description: 'Full Stack development with Angular and Spring Boot'
     },
     {
-      title: 'JavaFX, Swing, y Spring Boot – Crea tu primera GUI con Java',
+      title: 'JavaFX, Swing, and Spring Boot – Create your first GUI with Java',
       institution: 'Udemy',
-      date: 'Octubre 2025',
-      hours: '3.5 horas',
+      date: 'October 2025',
+      hours: '3.5 hours',
       image: 'images/diplomas/Certificado Java FX y Spring.jpg',
-      description: 'Creación de interfaces gráficas con Java'
+      description: 'Creating graphical interfaces with Java'
     },
     {
-      title: 'Iniciate como Full Stack con Spring Boot y React',
+      title: 'Get Started as Full Stack with Spring Boot and React',
       institution: 'Udemy',
-      date: 'Octubre 2024',
-      hours: '11.5 horas',
+      date: 'October 2024',
+      hours: '11.5 hours',
       image: 'images/diplomas/Certificado Full Stack con React y Spring.jpg',
-      description: 'Desarrollo Full Stack con Spring Boot y React'
+      description: 'Full Stack development with Spring Boot and React'
     },
     {
       title: 'Create a WordPress website with Hostinger',
       institution: 'Udemy',
-      date: 'Noviembre 2022',
-      hours: '1.5 horas',
+      date: 'November 2022',
+      hours: '1.5 hours',
       image: 'images/diplomas/Crear WordPress Website con Hostinger.jpg',
-      description: 'Creación de sitios web con WordPress'
+      description: 'Creating websites with WordPress'
     },
     {
-      title: 'Curso Programador Java Certificado I',
+      title: 'Certified Java Programmer Course I',
       institution: 'Udemy',
-      date: 'Julio 2018',
-      hours: '7.5 horas',
+      date: 'July 2018',
+      hours: '7.5 hours',
       image: 'images/diplomas/certificacion Java I.png',
-      description: 'Certificación de Programador Java nivel I'
+      description: 'Java Programmer Certification level I'
     },
     {
       title: 'Developing Enterprise-wide Application using J2EE Technologies',
       institution: 'Centre of Excellence for Information Technology India-El Salvador (ITCA)',
-      date: 'Octubre 2008',
-      hours: 'Programa completo',
+      date: 'October 2008',
+      hours: 'Complete program',
       image: 'images/diplomas/certificado Java 2 ITCA.jpg',
-      description: 'Desarrollo de aplicaciones empresariales con J2EE'
+      description: 'Enterprise application development with J2EE'
     },
     {
       title: 'Java Developer Certification',
       institution: 'ITCA',
       date: '2008',
-      hours: 'Programa completo',
+      hours: 'Complete program',
       image: 'images/diplomas/certificado Java 1 ITCA.jpg',
-      description: 'Certificación de Desarrollador Java'
+      description: 'Java Developer Certification'
     },
     {
       title: 'PathwayConnect Certificate',
       institution: 'BYU-Pathway Worldwide',
       date: '2020',
-      hours: 'Programa completo',
+      hours: 'Complete program',
       image: 'images/diplomas/Pathway Connect.png',
-      description: 'Certificado PathwayConnect'
+      description: 'PathwayConnect Certificate'
     }
   ]
 
@@ -98,10 +98,10 @@ const Certifications = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Certificaciones & <span className="text-gradient">Educación</span>
+              Certifications & <span className="text-gradient">Education</span>
             </h2>
             <p className="text-gray-400 text-lg">
-              Formación continua y certificaciones profesionales
+              Continuous training and professional certifications
             </p>
           </div>
 

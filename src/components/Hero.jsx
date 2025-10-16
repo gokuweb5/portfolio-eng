@@ -7,14 +7,14 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto text-center">
         <div className="mb-8">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
-            Hola, soy <span className="text-gradient">Luis Tránsito Hernández Navarrete</span>
+            Hi, I'm <span className="text-gradient">Luis Transito Hernandez Navarrete</span>
           </h1>
           <h2 className="text-2xl md:text-4xl text-gray-400 mb-6">
             Full-Stack Developer | Java & Spring Boot | React
           </h2>
           <p className="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            Full-Stack Developer con experiencia sólida en diseño, desarrollo e implementación de aplicaciones web end-to-end.
-            Especializado en crear servicios backend robustos y seguros con Java y Spring Boot, e interfaces de usuario dinámicas y responsivas con React.
+            Full-Stack Developer with solid experience in designing, developing, and implementing end-to-end web applications.
+            Specialized in creating robust and secure backend services with Java and Spring Boot, and dynamic, responsive user interfaces with React.
           </p>
         </div>
 
@@ -24,7 +24,7 @@ const Hero = () => {
             className="bg-primary-600 hover:bg-primary-700 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
           >
             <Mail size={20} />
-            Contáctame
+            Contact Me
           </a>
           <a
             href={`${import.meta.env.BASE_URL}resume/Luis Transito Hernandez Navarrete Resume.pdf`}
@@ -32,7 +32,7 @@ const Hero = () => {
             className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
           >
             <Download size={20} />
-            Descargar CV
+            Download Resume
           </a>
         </div>
 

@@ -5,23 +5,23 @@ const About = () => {
   const highlights = [
     {
       icon: <Code2 className="w-8 h-8" />,
-      title: 'Desarrollo Backend',
-      description: 'Experiencia en Java, Spring Boot y arquitecturas RESTful'
+      title: 'Backend Development',
+      description: 'Experience in Java, Spring Boot and RESTful architectures'
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: 'Bases de Datos',
-      description: 'MySQL, PostgreSQL, MongoDB y optimización de consultas'
+      title: 'Databases',
+      description: 'MySQL, PostgreSQL, MongoDB and query optimization'
     },
     {
       icon: <Server className="w-8 h-8" />,
-      title: 'Microservicios',
-      description: 'Diseño e implementación de arquitecturas distribuidas'
+      title: 'Microservices',
+      description: 'Design and implementation of distributed architectures'
     },
     {
       icon: <Zap className="w-8 h-8" />,
-      title: 'Mejores Prácticas',
-      description: 'Clean Code, SOLID, patrones de diseño y testing'
+      title: 'Best Practices',
+      description: 'Clean Code, SOLID, design patterns and testing'
     }
   ]
 
@@ -29,25 +29,25 @@ const About = () => {
     <section id="about" className="py-20 px-4 bg-gray-800/50">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          Sobre <span className="text-gradient">Mí</span>
+          About <span className="text-gradient">Me</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <p className="text-lg text-gray-300 mb-4">
-              Full-Stack Developer con experiencia sólida en diseñar, desarrollar e implementar aplicaciones web completas.
-              Especializado en crear servicios backend robustos y seguros con Java y Spring Boot, y en construir interfaces
-              de usuario dinámicas y responsivas con React y JavaScript.
+              Full-Stack Developer with solid experience in designing, developing, and implementing complete web applications.
+              Specialized in creating robust and secure backend services with Java and Spring Boot, and building dynamic
+              and responsive user interfaces with React and JavaScript.
             </p>
             <p className="text-lg text-gray-300 mb-4">
-              Mi experiencia incluye el desarrollo de sistemas de punto de venta, plataformas de e-commerce, sistemas de
-              licitaciones y aplicaciones empresariales. He trabajado con tecnologías como Spring Framework, MySQL, PostgreSQL,
-              React, y herramientas modernas de desarrollo.
+              My experience includes developing point-of-sale systems, e-commerce platforms, bidding systems,
+              and enterprise applications. I have worked with technologies such as Spring Framework, MySQL, PostgreSQL,
+              React, and modern development tools.
             </p>
             <p className="text-lg text-gray-300">
-              Con más de 6 años de experiencia en servicio al cliente y una sólida formación técnica, combino habilidades
-              técnicas con una comprensión profunda de las necesidades del usuario final para crear soluciones eficientes
-              y escalables que superen las expectativas.
+              With over 6 years of customer service experience and solid technical training, I combine technical
+              skills with a deep understanding of end-user needs to create efficient and scalable solutions
+              that exceed expectations.
             </p>
           </div>
           

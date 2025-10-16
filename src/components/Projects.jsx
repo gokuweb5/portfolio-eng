@@ -10,8 +10,8 @@ const Projects = () => {
   }
   const projects = [
     {
-      title: 'Sistema POS y Facturación - Facturamerica.com',
-      description: 'Sistema completo de punto de venta y facturación desarrollado para Virtual Mentors. Frontend con React 18.2.0, Vite 5.0.8 y TailwindCSS 3.3.6. Backend con Spring Boot 3.2.0, Spring Data JPA, Spring Security, MySQL, iText y Lombok.',
+      title: 'POS and Billing System - Facturamerica.com',
+      description: 'Complete point-of-sale and billing system developed for Virtual Mentors. Frontend with React 18.2.0, Vite 5.0.8, and TailwindCSS 3.3.6. Backend with Spring Boot 3.2.0, Spring Data JPA, Spring Security, MySQL, iText, and Lombok.',
       technologies: ['React', 'Vite', 'TailwindCSS', 'Spring Boot', 'MySQL', 'Spring Security', 'iText'],
       github: 'https://github.com/gokuweb5/punto-ventas-web',
       demo: 'https://facturamerica.com',
@@ -20,8 +20,8 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'Sistema de Licitaciones - Iglesia de Jesucristo',
-      description: 'Sistema integral de licitaciones desarrollado con Spring Boot 3.2.3 y MySQL. Incluye soporte para PostgreSQL como base de datos secundaria y capacidades de reportería con JasperReports 6.20.6.',
+      title: 'Bidding System - Church of Jesus Christ',
+      description: 'Comprehensive bidding system developed with Spring Boot 3.2.3 and MySQL. Includes support for PostgreSQL as a secondary database and reporting capabilities with JasperReports 6.20.6.',
       technologies: ['Spring Boot', 'MySQL', 'PostgreSQL', 'JasperReports', 'Spring Data JPA'],
       github: 'https://github.com/gokuweb5/LicitacionesOH_EN',
       demo: null,
@@ -30,8 +30,8 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'Sitio Web E.M.A Auto Repair',
-      description: 'Sitio web completamente responsive desarrollado para E.M.A Auto Repair en Winchester, Virginia. Construido con HTML, CSS, JavaScript y PHP.',
+      title: 'E.M.A Auto Repair Website',
+      description: 'Fully responsive website developed for E.M.A Auto Repair in Winchester, Virginia. Built with HTML, CSS, JavaScript, and PHP.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'PHP'],
       github: null,
       demo: 'https://www.ematires.com/',
@@ -40,8 +40,8 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'Curso Udemy: Domina JavaScript - Aplicación Fullstack de Ajedrez',
-      description: 'Curso completo en Udemy donde enseño a crear una aplicación fullstack de ajedrez. Cubre HTML5 moderno, CSS con Flexbox/CSS Grid, JavaScript avanzado, backend con Node.js/Express.js y base de datos PostgreSQL.',
+      title: 'Udemy Course: Master JavaScript - Fullstack Chess Application',
+      description: 'Complete Udemy course where I teach how to create a fullstack chess application. Covers modern HTML5, CSS with Flexbox/CSS Grid, advanced JavaScript, backend with Node.js/Express.js, and PostgreSQL database.',
       technologies: ['JavaScript', 'Node.js', 'Express.js', 'PostgreSQL', 'HTML5', 'CSS3'],
       github: 'https://github.com/gokuweb5/chess1',
       demo: 'https://www.udemy.com/course/domina-javascript-crea-una-aplicacion-fullstack-de-ajedrez/learn/lecture/49426537#overview',
@@ -49,8 +49,8 @@ const Projects = () => {
       featured: true
     },
     {
-      title: 'Sistema de Ajedrez - Proyecto Educativo',
-      description: 'Implementación completa del juego de ajedrez con arquitectura fullstack. Incluye backend con Spring Boot, frontend con React y aplicación de patrones de diseño.',
+      title: 'Chess System - Educational Project',
+      description: 'Complete implementation of chess game with fullstack architecture. Includes backend with Spring Boot, frontend with React, and application of design patterns.',
       technologies: ['Java', 'Spring Boot', 'React', 'MySQL', 'Design Patterns'],
       github: 'https://github.com/gokuweb5/chess1',
       demo: null,
@@ -58,8 +58,8 @@ const Projects = () => {
       video: 'images/projects/chess/project chess1.mp4'
     },
     {
-      title: 'Plataforma E-commerce - Deschavetados',
-      description: 'Plataforma de comercio electrónico para YouTubers salvadoreños. Construida con Spring, Bootstrap 4, Thymeleaf, HTML5 y jQuery 3, utilizando MySQL como base de datos.',
+      title: 'E-commerce Platform - Deschavetados',
+      description: 'E-commerce platform for Salvadoran YouTubers. Built with Spring, Bootstrap 4, Thymeleaf, HTML5, and jQuery 3, using MySQL as database.',
       technologies: ['Spring', 'Bootstrap', 'Thymeleaf', 'MySQL', 'jQuery', 'HTML5'],
       github: null,
       demo: null,
@@ -72,7 +72,7 @@ const Projects = () => {
       <section id="projects" className="py-20 px-4 bg-gray-800/50">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-            Mis <span className="text-gradient">Proyectos</span>
+            My <span className="text-gradient">Projects</span>
           </h2>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -129,7 +129,7 @@ const Projects = () => {
                       className="flex items-center gap-2 text-gray-400 hover:text-primary-400 transition-colors"
                     >
                       <Github size={20} />
-                      <span className="text-sm">Código</span>
+                      <span className="text-sm">Code</span>
                     </a>
                   )}
                   {project.demo && (

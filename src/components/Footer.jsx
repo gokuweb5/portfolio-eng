@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-gray-400 text-sm">
-            © {currentYear} Luis Tránsito Hernández Navarrete. Hecho con <Heart className="inline w-4 h-4 text-red-500" /> usando React & TailwindCSS
+            © {currentYear} Luis Transito Hernandez Navarrete. Made with <Heart className="inline w-4 h-4 text-red-500" /> using React & TailwindCSS
           </div>
           
           <div className="flex gap-6">
@@ -24,7 +24,7 @@ const Footer = () => {
             <a
               href="tel:+50370523646"
               className="text-gray-400 hover:text-primary-400 transition-colors"
-              title="Teléfono"
+              title="Phone"
             >
               <Linkedin size={24} />
             </a>

@@ -14,13 +14,13 @@ const Navbar = () => {
   }, [])
 
   const navItems = [
-    { name: 'Inicio', href: '#home' },
-    { name: 'Sobre mí', href: '#about' },
-    { name: 'Habilidades', href: '#skills' },
-    { name: 'Certificaciones', href: '#certifications' },
-    { name: 'Proyectos', href: '#projects' },
-    { name: 'Experiencia', href: '#experience' },
-    { name: 'Contacto', href: '#contact' },
+    { name: 'Home', href: '#home' },
+    { name: 'About', href: '#about' },
+    { name: 'Skills', href: '#skills' },
+    { name: 'Certifications', href: '#certifications' },
+    { name: 'Projects', href: '#projects' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Contact', href: '#contact' },
   ]
 
   return (

@@ -27,7 +27,7 @@ const Skills = () => {
       ]
     },
     {
-      category: 'Bases de Datos',
+      category: 'Databases',
       skills: [
         { name: 'MySQL', level: 90 },
         { name: 'PostgreSQL', level: 85 },
@@ -36,7 +36,7 @@ const Skills = () => {
       ]
     },
     {
-      category: 'Herramientas & Tecnologías',
+      category: 'Tools & Technologies',
       skills: [
         { name: 'Git & SVN', level: 85 },
         { name: 'Vite', level: 85 },
@@ -52,7 +52,7 @@ const Skills = () => {
     <section id="skills" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          Habilidades <span className="text-gradient">Técnicas</span>
+          Technical <span className="text-gradient">Skills</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">

@@ -7,40 +7,40 @@ const Experience = () => {
       type: 'work',
       title: 'Full-Stack Developer & Instructor',
       company: 'Virtual Mentors (Programación y Desarrollo Web)',
-      period: 'Enero 2020 - Actual',
-      description: 'Desarrollo de aplicaciones web full-stack y creación de contenido educativo para plataformas de aprendizaje en línea.',
+      period: 'January 2020 - Present',
+      description: 'Full-stack web application development and creation of educational content for online learning platforms.',
       achievements: [
-        'Desarrollé sistema POS y facturación para Facturamerica.com con React, Spring Boot y MySQL',
-        'Creé sistema de licitaciones para la Iglesia de Jesucristo con Spring Boot y JasperReports',
-        'Desarrollé plataforma e-commerce para YouTubers "Deschavetados" con Spring y Thymeleaf',
-        'Creé e impartí curso en Udemy: "Domina JavaScript: Crea una aplicación Fullstack de ajedrez"',
-        'Desarrollé sitio web responsive para E.M.A Auto Repair en Virginia'
+        'Developed POS and billing system for Facturamerica.com with React, Spring Boot, and MySQL',
+        'Created bidding system for the Church of Jesus Christ with Spring Boot and JasperReports',
+        'Developed e-commerce platform for "Deschavetados" YouTubers with Spring and Thymeleaf',
+        'Created and taught Udemy course: "Master JavaScript: Create a Fullstack Chess Application"',
+        'Developed responsive website for E.M.A Auto Repair in Virginia'
       ]
     },
     {
       type: 'work',
       title: 'Customer Service Representative',
-      company: 'Varios Call Centers (Teleperformance, FUSION BPO)',
-      period: 'Noviembre 2014 - Octubre 2020',
-      description: 'Servicio al cliente y soporte técnico de alta calidad para cuentas importantes.',
+      company: 'Various Call Centers (Teleperformance, FUSION BPO)',
+      period: 'November 2014 - October 2020',
+      description: 'High-quality customer service and technical support for major accounts.',
       achievements: [
-        'Cricket (Teleperformance) - Soporte técnico y atención al cliente',
-        'AT&T Internet, Cable & Phone (FUSION BPO) - Soporte técnico especializado',
-        'Choice Hotels (Teleperformance) - Atención al cliente y reservaciones',
-        '6 años de experiencia desarrollando habilidades de comunicación efectiva'
+        'Cricket (Teleperformance) - Technical support and customer service',
+        'AT&T Internet, Cable & Phone (FUSION BPO) - Specialized technical support',
+        'Choice Hotels (Teleperformance) - Customer service and reservations',
+        '6 years of experience developing effective communication skills'
       ]
     },
     {
       type: 'work',
-      title: 'Programador Java',
-      company: 'Aeroman (Consultor para Contactos y Oportunidades)',
-      period: 'Enero - Noviembre 2009',
-      description: 'Desarrollo de aplicaciones empresariales en el departamento de TI de Aeroman.',
+      title: 'Java Programmer',
+      company: 'Aeroman (Consultant for Contacts and Opportunities)',
+      period: 'January - November 2009',
+      description: 'Enterprise application development in Aeroman\'s IT department.',
       achievements: [
-        'Desarrollo con Java Struts Framework',
-        'Uso de JDeveloper y Oracle SQL Developer',
-        'Control de versiones con TortoiseSVN',
-        'Trabajo on-site en proyectos empresariales'
+        'Development with Java Struts Framework',
+        'Use of JDeveloper and Oracle SQL Developer',
+        'Version control with TortoiseSVN',
+        'On-site work on enterprise projects'
       ]
     }
   ]
@@ -50,22 +50,22 @@ const Experience = () => {
       type: 'education',
       title: 'Java Developer - J2EE Technologies',
       institution: 'Centre of Excellence for Information Technology India-El Salvador (ITCA)',
-      period: 'Octubre 2008',
-      description: 'Especialización en desarrollo de aplicaciones empresariales usando tecnologías J2EE. Examen final y proyecto completados exitosamente.'
+      period: 'October 2008',
+      description: 'Specialization in enterprise application development using J2EE technologies. Final exam and project completed successfully.'
     },
     {
       type: 'education',
-      title: 'Licenciatura en Computación',
+      title: 'Bachelor\'s Degree in Computer Science',
       institution: 'Universidad Doctor Andrés Bello',
-      period: 'Noviembre 2005',
-      description: 'Cuarto año de licenciatura en computación. Área general de estudio: Computación.'
+      period: 'November 2005',
+      description: 'Fourth year of bachelor\'s degree in computer science. General area of study: Computer Science.'
     },
     {
       type: 'education',
-      title: 'Formación Continua - Udemy',
+      title: 'Continuous Training - Udemy',
       institution: 'Udemy (2009-2025)',
       period: '2009 - 2025',
-      description: 'Múltiples certificaciones en tecnologías modernas: Spring Framework 6, Spring Boot 3, React, Angular, JavaFX, y más. Más de 80 horas de formación especializada.'
+      description: 'Multiple certifications in modern technologies: Spring Framework 6, Spring Boot 3, React, Angular, JavaFX, and more. Over 80 hours of specialized training.'
     }
   ]
 
@@ -73,7 +73,7 @@ const Experience = () => {
     <section id="experience" className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-12">
-          Experiencia & <span className="text-gradient">Educación</span>
+          Experience & <span className="text-gradient">Education</span>
         </h2>
         
         <div className="grid md:grid-cols-2 gap-8">
@@ -81,7 +81,7 @@ const Experience = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <Briefcase className="text-primary-400" />
-              Experiencia
+              Experience
             </h3>
             <div className="space-y-6">
               {experiences.map((exp, index) => (
@@ -106,7 +106,7 @@ const Experience = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-6 flex items-center gap-2">
               <GraduationCap className="text-primary-400" />
-              Educación
+              Education
             </h3>
             <div className="space-y-6">
               {education.map((edu, index) => (
