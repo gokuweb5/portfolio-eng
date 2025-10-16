@@ -27,7 +27,7 @@ const Hero = () => {
             Contact Me
           </a>
           <a
-            href={`${import.meta.env.BASE_URL}resume/Luis Transito Hernandez Navarrete Resume.pdf`}
+            href={`${import.meta.env.BASE_URL}resume/Resume Luis Navarrete.pdf`}
             download
             className="bg-gray-800 hover:bg-gray-700 text-white px-8 py-3 rounded-lg font-medium transition-colors inline-flex items-center gap-2"
           >
