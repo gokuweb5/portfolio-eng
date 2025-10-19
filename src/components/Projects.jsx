@@ -55,7 +55,7 @@ const Projects = () => {
       github: 'https://github.com/gokuweb5/chess1',
       demo: null,
       image: 'images/projects/chess/chess1.png',
-      video: 'images/projects/chess/project chess1.mp4'
+      video: 'images/projects/chess/projectchess.mp4'
     },
     {
       title: 'E-commerce Platform - Deschavetados',
