@@ -16,7 +16,7 @@ const Projects = () => {
       github: 'https://github.com/gokuweb5/punto-ventas-web',
       demo: 'https://facturamerica.com',
       image: 'images/projects/punto-ventas/pos1.png',
-      video: 'images/projects/punto-ventas/project pos1.mp4',
+      video: 'images/projects/punto-ventas/project punto de venta.mp4',
       featured: true
     },
     {
