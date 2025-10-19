@@ -26,7 +26,7 @@ const Projects = () => {
       github: 'https://github.com/gokuweb5/LicitacionesOH_EN',
       demo: null,
       image: 'images/projects/bidding-system/bidding1.png',
-      video: 'images/projects/bidding-system/project bidding 1.mp4',
+      video: 'images/projects/bidding-system/project bidding system.mp4',
       featured: true
     },
     {
