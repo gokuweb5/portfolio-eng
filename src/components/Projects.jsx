@@ -58,12 +58,13 @@ const Projects = () => {
       video: 'images/projects/chess/project-chess.mp4'
     },
     {
-      title: 'E-commerce Platform - Deschavetados',
-      description: 'E-commerce platform for Salvadoran YouTubers. Built with Spring, Bootstrap 4, Thymeleaf, HTML5, and jQuery 3, using MySQL as database.',
-      technologies: ['Spring', 'Bootstrap', 'Thymeleaf', 'MySQL', 'jQuery', 'HTML5'],
+      title: 'Bidding Management System - Legacy Project',
+      description: 'Comprehensive bidding management system developed in 2012 with Java 7 and Microsoft Access database. Includes advanced reporting capabilities with JasperReports for generating detailed bidding documentation.',
+      technologies: ['Java 7', 'Microsoft Access', 'JasperReports', 'Swing'],
       github: null,
       demo: null,
-      image: null
+      image: 'images/projects/licitaciones/licitaciones.png',
+      video: 'images/projects/licitaciones/project-licitaciones.mp4'
     }
   ]
 
