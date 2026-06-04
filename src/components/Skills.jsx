@@ -3,47 +3,50 @@ import React from 'react'
 const Skills = () => {
   const skillCategories = [
     {
-      category: 'Backend Development',
+      category: 'Backend (Java / Spring)',
       skills: [
-        { name: 'Java & J2EE', level: 90 },
+        { name: 'Java 17 / 21', level: 92 },
+        { name: 'Spring Boot 3.2', level: 92 },
         { name: 'Spring Framework 6', level: 90 },
-        { name: 'Spring Boot 3', level: 90 },
-        { name: 'Spring Data JPA', level: 85 },
-        { name: 'Spring Security', level: 85 },
-        { name: 'Node.js & Express.js', level: 80 },
+        { name: 'Spring Data JPA / MyBatis', level: 88 },
+        { name: 'Spring Security + JWT', level: 88 },
+        { name: 'REST APIs / OpenAPI (Swagger)', level: 90 },
+        { name: 'Node.js & Express.js', level: 78 },
       ]
     },
     {
-      category: 'Frontend Development',
+      category: 'Frontend (Angular / TS)',
       skills: [
-        { name: 'React 18', level: 85 },
-        { name: 'JavaScript (ES6+)', level: 90 },
-        { name: 'HTML5 & CSS3', level: 90 },
-        { name: 'TailwindCSS', level: 85 },
-        { name: 'Bootstrap 4', level: 85 },
-        { name: 'Thymeleaf', level: 80 },
-        { name: 'Angular', level: 75 },
-        { name: 'JavaFX & Swing', level: 75 },
+        { name: 'Angular 18', level: 88 },
+        { name: 'TypeScript', level: 88 },
+        { name: 'RxJS', level: 80 },
+        { name: 'TailwindCSS', level: 88 },
+        { name: 'HTML5 & CSS3', level: 92 },
+        { name: 'JavaScript (ES6+)', level: 92 },
+        { name: 'React 18', level: 80 },
+        { name: 'Bootstrap / Thymeleaf', level: 82 },
       ]
     },
     {
-      category: 'Databases',
+      category: 'Databases & Reporting',
       skills: [
+        { name: 'PostgreSQL', level: 90 },
         { name: 'MySQL', level: 90 },
-        { name: 'PostgreSQL', level: 85 },
-        { name: 'Oracle SQL', level: 80 },
-        { name: 'JasperReports', level: 75 },
+        { name: 'Redis (cache)', level: 78 },
+        { name: 'Liquibase (migrations)', level: 80 },
+        { name: 'Oracle SQL', level: 78 },
+        { name: 'JasperReports 6', level: 82 },
       ]
     },
     {
-      category: 'Tools & Technologies',
+      category: 'Cloud & DevOps',
       skills: [
-        { name: 'Git & SVN', level: 85 },
-        { name: 'Vite', level: 85 },
-        { name: 'Maven', level: 80 },
-        { name: 'iText (PDF)', level: 80 },
-        { name: 'WordPress', level: 75 },
-        { name: 'JDeveloper', level: 70 },
+        { name: 'AWS (RDS, S3, SES, CloudWatch)', level: 82 },
+        { name: 'AWS ElastiCache (Redis)', level: 78 },
+        { name: 'Docker', level: 82 },
+        { name: 'Git / GitHub', level: 90 },
+        { name: 'Maven', level: 85 },
+        { name: 'CI/CD basics', level: 75 },
       ]
     }
   ]

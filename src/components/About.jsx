@@ -1,27 +1,27 @@
 import React from 'react'
-import { Code2, Database, Server, Zap } from 'lucide-react'
+import { Code2, Database, Cloud, Shield } from 'lucide-react'
 
 const About = () => {
   const highlights = [
     {
       icon: <Code2 className="w-8 h-8" />,
-      title: 'Backend Development',
-      description: 'Experience in Java, Spring Boot and RESTful architectures'
+      title: 'Spring Boot Backend',
+      description: 'Spring Boot 3.2, Spring Data JPA, MyBatis and RESTful APIs'
     },
     {
       icon: <Database className="w-8 h-8" />,
-      title: 'Databases',
-      description: 'MySQL, PostgreSQL, MongoDB and query optimization'
+      title: 'Angular Frontend',
+      description: 'Angular 18, TypeScript, RxJS and TailwindCSS for modern UIs'
     },
     {
-      icon: <Server className="w-8 h-8" />,
-      title: 'Microservices',
-      description: 'Design and implementation of distributed architectures'
+      icon: <Cloud className="w-8 h-8" />,
+      title: 'Cloud & DevOps',
+      description: 'AWS (RDS, ElastiCache, S3, SES, CloudWatch), Docker and Liquibase'
     },
     {
-      icon: <Zap className="w-8 h-8" />,
-      title: 'Best Practices',
-      description: 'Clean Code, SOLID, design patterns and testing'
+      icon: <Shield className="w-8 h-8" />,
+      title: 'Security & Quality',
+      description: 'Spring Security, JWT, OpenAPI/Swagger, Clean Code and SOLID'
     }
   ]
 
@@ -35,19 +35,20 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <p className="text-lg text-gray-300 mb-4">
-              Full-Stack Developer with solid experience in designing, developing, and implementing complete web applications.
-              Specialized in creating robust and secure backend services with Java and Spring Boot, and building dynamic
-              and responsive user interfaces with React and JavaScript.
+              Full-Stack Developer with solid experience designing, developing and deploying end-to-end web
+              applications. Specialized in robust and secure backend services with Java and Spring Boot, and
+              dynamic, responsive interfaces with Angular and TypeScript.
             </p>
             <p className="text-lg text-gray-300 mb-4">
-              My experience includes developing point-of-sale systems, e-commerce platforms, bidding systems,
-              and enterprise applications. I have worked with technologies such as Spring Framework, MySQL, PostgreSQL,
-              React, and modern development tools.
+              I have architected and shipped the intelligent accounting and invoicing system
+              <span className="text-primary-400"> Facturamerica.com</span> using Spring Boot 3.2 and Angular 18,
+              along with internal bidding systems for The Church of Jesus Christ of Latter-day Saints, e-commerce
+              platforms and educational content reaching thousands of students.
             </p>
             <p className="text-lg text-gray-300">
-              With over 6 years of customer service experience and solid technical training, I combine technical
-              skills with a deep understanding of end-user needs to create efficient and scalable solutions
-              that exceed expectations.
+              I combine deep technical knowledge with 6+ years of customer-facing experience, allowing me to
+              translate business requirements into clean, scalable solutions deployed on AWS with Docker, Liquibase,
+              JWT and OpenAPI/Swagger.
             </p>
           </div>
           

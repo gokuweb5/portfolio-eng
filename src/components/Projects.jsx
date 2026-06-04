@@ -1,8 +1,20 @@
 import React, { useState } from 'react'
-import { Github, ExternalLink, X, Play } from 'lucide-react'
+import { Github, ExternalLink, X, Play, Star } from 'lucide-react'
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null)
+  const [activeVideo, setActiveVideo] = useState(0)
+
+  const openProject = (project) => {
+    setActiveVideo(0)
+    setSelectedProject(project)
+  }
+
+  const getVideos = (project) => {
+    if (project?.videos && project.videos.length) return project.videos
+    if (project?.video) return [{ label: 'Demo', src: project.video }]
+    return []
+  }
   
   // Helper para rutas correctas en producción
   const getAssetPath = (path) => {
@@ -10,13 +22,16 @@ const Projects = () => {
   }
   const projects = [
     {
-      title: 'POS and Billing System - Facturamerica.com',
-      description: 'Complete point-of-sale and billing system developed for Virtual Mentors. Frontend with React 18.2.0, Vite 5.0.8, and TailwindCSS 3.3.6. Backend with Spring Boot 3.2.0, Spring Data JPA, Spring Security, MySQL, iText, and Lombok.',
-      technologies: ['React', 'Vite', 'TailwindCSS', 'Spring Boot', 'MySQL', 'Spring Security', 'iText'],
-      github: 'https://github.com/gokuweb5/punto-ventas-web',
+      title: 'Facturamerica.com — Intelligent Accounting & Invoicing',
+      description: 'Decoupled multi-company accounting and invoicing platform built for the Salvadoran market. Spring Boot 3.2 backend with Spring Security + JWT, Spring Data JPA, MyBatis, PostgreSQL and Redis. Angular 18 + TypeScript + TailwindCSS frontend. Deployed on AWS (RDS, ElastiCache, S3, SES, CloudWatch) with Docker, Liquibase migrations and OpenAPI/Swagger.',
+      technologies: ['Angular 18', 'TypeScript', 'TailwindCSS', 'Spring Boot 3.2', 'Spring Security', 'JWT', 'JPA', 'MyBatis', 'PostgreSQL', 'Redis', 'AWS', 'Docker'],
+      github: null,
       demo: 'https://facturamerica.com',
-      image: 'images/projects/punto-ventas/pos1.png',
-      video: 'images/projects/punto-ventas/project punto de venta.mp4',
+      image: 'images/projects/facturamerica/pos1.png',
+      videos: [
+        { label: 'Overview', src: 'images/projects/facturamerica/facturamerica1.mp4' },
+        { label: 'Walkthrough', src: 'images/projects/facturamerica/facturamerica1-1.mp4' }
+      ],
       featured: true
     },
     {
@@ -76,26 +91,36 @@ const Projects = () => {
             My <span className="text-gradient">Projects</span>
           </h2>
         
+        <p className="text-center text-gray-400 max-w-2xl mx-auto mb-12 -mt-8">A selection of full-stack projects showcasing Spring Boot, Angular and cloud deployments.</p>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
+          {projects.map((project, index) => {
+            const hasVideo = (project.videos && project.videos.length) || project.video
+            return (
             <div
               key={index}
-              className="bg-gray-900 rounded-lg overflow-hidden hover:transform hover:scale-105 transition-all duration-300"
+              className="group relative bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-primary-500/50 hover:shadow-2xl hover:shadow-primary-500/10 transition-all duration-300"
             >
+              {project.featured && (
+                <span className="absolute top-3 right-3 z-10 inline-flex items-center gap-1 bg-primary-600/90 backdrop-blur text-white text-xs font-medium px-2.5 py-1 rounded-full">
+                  <Star size={12} className="fill-current" /> Featured
+                </span>
+              )}
               <div 
-                className="h-48 bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center overflow-hidden relative group cursor-pointer"
-                onClick={() => project.video && setSelectedProject(project)}
+                className="h-48 bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center overflow-hidden relative cursor-pointer"
+                onClick={() => hasVideo && openProject(project)}
               >
                 {project.image ? (
                   <>
                     <img 
                       src={getAssetPath(project.image)} 
                       alt={project.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    {project.video && (
-                      <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                        <Play className="w-16 h-16 text-white" />
+                    {hasVideo && (
+                      <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                        <div className="bg-primary-600 rounded-full p-4 shadow-lg">
+                          <Play className="w-8 h-8 text-white fill-current" />
+                        </div>
                       </div>
                     )}
                   </>
@@ -147,18 +172,19 @@ const Projects = () => {
                 </div>
               </div>
             </div>
-          ))}
+            )
+          })}
         </div>
       </div>
     </section>
 
-    {/* Modal de Video */}
-    {selectedProject && selectedProject.video && (
+    {/* Video Modal */}
+    {selectedProject && getVideos(selectedProject).length > 0 && (
       <div
         className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
         onClick={() => setSelectedProject(null)}
       >
-        <div className="relative max-w-5xl w-full">
+        <div className="relative max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
           <button
             onClick={() => setSelectedProject(null)}
             className="absolute -top-12 right-0 text-white hover:text-primary-400 transition-colors"
@@ -167,14 +193,27 @@ const Projects = () => {
           </button>
           
           <div className="bg-gray-900 rounded-lg overflow-hidden">
+            {getVideos(selectedProject).length > 1 && (
+              <div className="flex gap-2 p-3 bg-gray-950 border-b border-gray-800">
+                {getVideos(selectedProject).map((v, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActiveVideo(i)}
+                    className={`px-4 py-1.5 rounded-full text-sm transition-colors ${activeVideo === i ? 'bg-primary-600 text-white' : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}`}
+                  >
+                    {v.label}
+                  </button>
+                ))}
+              </div>
+            )}
             <video
+              key={getVideos(selectedProject)[activeVideo].src}
               controls
               autoPlay
               className="w-full h-auto"
-              onClick={(e) => e.stopPropagation()}
             >
-              <source src={getAssetPath(selectedProject.video)} type="video/mp4" />
-              Tu navegador no soporta el elemento de video.
+              <source src={getAssetPath(getVideos(selectedProject)[activeVideo].src)} type="video/mp4" />
+              Your browser does not support the video tag.
             </video>
             
             <div className="p-6">

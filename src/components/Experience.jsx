@@ -5,16 +5,18 @@ const Experience = () => {
   const experiences = [
     {
       type: 'work',
-      title: 'Full-Stack Developer & Instructor',
-      company: 'Virtual Mentors (Programación y Desarrollo Web)',
+      title: 'Independent Full-Stack Java Developer',
+      company: 'Virtual Mentors',
       period: 'January 2020 - Present',
-      description: 'Full-stack web application development and creation of educational content for online learning platforms.',
+      description: 'Independent consultant delivering end-to-end software solutions for international clients and creating technical educational content.',
       achievements: [
-        'Developed POS and billing system for Facturamerica.com with React, Spring Boot, and MySQL',
-        'Created bidding system for the Church of Jesus Christ with Spring Boot and JasperReports',
-        'Developed e-commerce platform for "Deschavetados" YouTubers with Spring and Thymeleaf',
-        'Created and taught Udemy course: "Master JavaScript: Create a Fullstack Chess Application"',
-        'Developed responsive website for E.M.A Auto Repair in Virginia'
+        'Architected and built Facturamerica.com — a multi-company intelligent accounting & invoicing platform with Spring Boot 3.2 (backend) and Angular 18 (frontend) for El Salvador',
+        'Implemented RESTful APIs secured with Spring Security and JWT, with Spring Data JPA + MyBatis on PostgreSQL and Redis for distributed caching',
+        'Designed a responsive, modern UI with Angular 18, TypeScript and TailwindCSS to streamline invoicing and accounting workflows',
+        'Deployed on AWS (RDS, ElastiCache, S3, SES, CloudWatch) using Docker, with database migrations via Liquibase and API docs with OpenAPI/Swagger',
+        'Built an internal bidding system for The Church of Jesus Christ of Latter-day Saints with Spring Boot 3.2.3, MySQL and JasperReports 6',
+        'Authored and taught the Udemy course "Master JavaScript: Build a Full-Stack Chess Application" (Node.js, Express, PostgreSQL)',
+        'Delivered the Deschavetados e-commerce (Spring MVC, Thymeleaf, Bootstrap 4) and the responsive E.M.A Tire & Auto Repair site (Virginia, USA)'
       ]
     },
     {
@@ -48,8 +50,15 @@ const Experience = () => {
   const education = [
     {
       type: 'education',
-      title: 'Java Developer - J2EE Technologies',
-      institution: 'Centre of Excellence for Information Technology India-El Salvador (ITCA)',
+      title: 'Bachelor\'s Degree in Software Development (In Progress)',
+      institution: 'Brigham Young University–Idaho',
+      period: '2025 — Projected Sep 2027',
+      description: 'Currently pursuing a Bachelor\'s in Software Development, deepening modern software engineering practices.'
+    },
+    {
+      type: 'education',
+      title: 'Java Developer — J2EE Technologies',
+      institution: 'Centre of Excellence for Information Technology India–El Salvador (ITCA)',
       period: 'October 2008',
       description: 'Specialization in enterprise application development using J2EE technologies. Final exam and project completed successfully.'
     },
@@ -62,10 +71,10 @@ const Experience = () => {
     },
     {
       type: 'education',
-      title: 'Continuous Training - Udemy',
-      institution: 'Udemy (2009-2025)',
-      period: '2009 - 2025',
-      description: 'Multiple certifications in modern technologies: Spring Framework 6, Spring Boot 3, React, Angular, JavaFX, and more. Over 80 hours of specialized training.'
+      title: 'Continuous Training — Udemy',
+      institution: 'Udemy (2009 — 2025)',
+      period: '2009 — 2025',
+      description: 'Spring Framework 6 & Spring Boot 3 (40.5h), Spring Master Class (14h), Angular & Spring Boot Full Stack (3.5h), JavaFX/Swing & Spring (3.5h), Full Stack with Spring Boot & React (11.5h), and more.'
     }
   ]
 
