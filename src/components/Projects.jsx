@@ -27,7 +27,7 @@ const Projects = () => {
       technologies: ['Angular 18', 'TypeScript', 'TailwindCSS', 'Spring Boot 3.2', 'Spring Security', 'JWT', 'JPA', 'MyBatis', 'PostgreSQL', 'Redis', 'AWS', 'Docker'],
       github: null,
       demo: 'https://facturamerica.com',
-      image: 'images/projects/facturamerica/pos1.png',
+      image: 'images/projects/facturamerica/facturamerica1.png',
       videos: [
         { label: 'Overview', src: 'images/projects/facturamerica/facturamerica1.mp4' },
         { label: 'Walkthrough', src: 'images/projects/facturamerica/facturamerica1-1.mp4' }
@@ -184,17 +184,17 @@ const Projects = () => {
         className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
         onClick={() => setSelectedProject(null)}
       >
-        <div className="relative max-w-5xl w-full" onClick={(e) => e.stopPropagation()}>
+        <div className="relative max-w-5xl w-full max-h-[90vh] flex flex-col" onClick={(e) => e.stopPropagation()}>
           <button
             onClick={() => setSelectedProject(null)}
-            className="absolute -top-12 right-0 text-white hover:text-primary-400 transition-colors"
+            className="absolute -top-10 right-0 text-white hover:text-primary-400 transition-colors z-10"
           >
             <X size={32} />
           </button>
           
-          <div className="bg-gray-900 rounded-lg overflow-hidden">
+          <div className="bg-gray-900 rounded-lg overflow-hidden flex flex-col min-h-0">
             {getVideos(selectedProject).length > 1 && (
-              <div className="flex gap-2 p-3 bg-gray-950 border-b border-gray-800">
+              <div className="flex flex-wrap gap-2 p-3 bg-gray-950 border-b border-gray-800 sticky top-0 z-10">
                 {getVideos(selectedProject).map((v, i) => (
                   <button
                     key={i}
@@ -206,11 +206,12 @@ const Projects = () => {
                 ))}
               </div>
             )}
+            <div className="overflow-y-auto min-h-0">
             <video
               key={getVideos(selectedProject)[activeVideo].src}
               controls
               autoPlay
-              className="w-full h-auto"
+              className="w-full max-h-[60vh] bg-black"
             >
               <source src={getAssetPath(getVideos(selectedProject)[activeVideo].src)} type="video/mp4" />
               Your browser does not support the video tag.
@@ -230,6 +231,7 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+            </div>
             </div>
           </div>
         </div>
